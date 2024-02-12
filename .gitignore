@@ -1,0 +1,34 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.swp
+*.bak
+*.pyc
+*.pyo
+*.pyd
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+local_settings.py
+db.sqlite3
+media
+
+# Visual Studio Code
+.vscode/
+
+# IDEs
+.idea/
+
+# Env
+.env
+venv/
+.env.*
+
+# Other
+*.bak
+.DS_Store
