@@ -328,3 +328,20 @@ ul#course-modules li:hover {
     padding-left: 0;
     padding-right: 0;
 }
+
+#logout-form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#logout-form button {
+    padding: 0;
+    border: none;
+    background: none;
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Subrayado para indicar que es un enlace */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}

@@ -13,7 +13,16 @@
         <a href="/" class="logo">Educa</a>
         <ul class="menu">
             {% if request.user.is_authenticated %}
-            <li><a href="{% url 'logout' %}">Sign out</a></li>
+            <li>
+                <!-- Actualmente es necesario enviar la orden de 
+                logout mediante el método post, sino no se ejecutará.
+            para que no sea un botón hay que usar css. Código para disimular el 
+        botón como un enlace en base.css #logout-form #log_out button -->
+                <form id="logout-form" action="{% url 'logout' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit">Sign out</button>
+                </form>
+            </li>
             {% else %}
             <li><a href="{% url 'login' %}">Sign in</a></li>
             {% endif %}
@@ -23,6 +32,8 @@
         {% block content %}
         {% endblock %}
     </div>
+    {% block include_js %}
+    {% endblock %}
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             // DOM loaded

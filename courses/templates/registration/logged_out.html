@@ -9,3 +9,11 @@
     </p>
 </div>
 {% endblock %}
+
+<!-- Hay que utilizar el método post en la plantilla que busque la vista logout 
+ya que sino dará error 
+<form action="{% url 'logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Log out</button>
+</form>
+-->
