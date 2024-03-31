@@ -1,0 +1,4 @@
+Para poder ejecutar correctamente el programa hay que ejecutar este contenedor
+de docker:
+
+sudo docker run -it --rm --name redis -p 6379:6379 redis
